@@ -1,0 +1,63 @@
+<!-- <div id="app">
+    <p v-if="seen">现在你看到我了</p>
+</div>
+
+<script>
+    const app = {
+        data() {
+            return {
+                seen: true  /* 改为false，信息就无法显示 */
+            }
+        }
+    }
+
+    Vue.createApp(app).mount('#app')
+</script> -->
+
+<!-- <div id="app">
+    <ol>
+        <li v-for="site in sites">
+            {{ site.text }}
+        </li>
+    </ol>
+</div>
+<script>
+    const app = {
+        data() {
+            return {
+                sites: [
+                    { text: 'Google' },
+                    { text: 'Runoob' },
+                    { text: 'Taobao' }
+                ]
+            }
+        }
+    }
+
+    Vue.createApp(app).mount('#app')
+</script> -->
+
+<!-- <div id="app">
+    <p><a v-bind:href="url">菜鸟教程</a></p>
+</div>
+
+<script>
+    const app = {
+        data() {
+            return {
+                url: 'https://www.runoob.com'
+            }
+        }
+    }
+
+    Vue.createApp(app).mount('#app')
+</script> -->
+
+<!-- 完整语法 -->
+<a v-on:click="doSomething"> ... </a>
+
+<!-- 缩写 -->
+<a @click="doSomething"> ... </a>
+
+<!-- 动态参数的缩写 (2.6.0+) -->
+<a @[event]="doSomething"> ... </a>
